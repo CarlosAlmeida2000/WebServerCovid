@@ -2,6 +2,7 @@
 var labelsProv = [];
 var dataProv = [];
 
+var listaprovincia = document.getElementById("lista-provincias");
 $.ajax({
     type: "GET",
     contentType: "application/json; charset=utf-8",
@@ -11,8 +12,11 @@ $.ajax({
         data.forEach((element) => {
             labelsProv.push(element.provincia);
             dataProv.push(element.problacion_total);
-            console.log(element.provincia);
+
+            //mostrar provincias
+            $("#lista-provincias").append("<li>" + element.provincia + "</li>");
         });
+        mostrarProvincias();
         //dibujarChartProvincias();
     },
     error: function (data) {
