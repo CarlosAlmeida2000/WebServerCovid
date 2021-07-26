@@ -42,13 +42,9 @@ namespace Api_covid.data.Repository
             sentencia_sql = "SELECT * FROM provincia WHERE idprovincia = '" + id + "';";
             return await this.connect_db.QueryFirstOrDefaultAsync<Provincia>(sentencia_sql);
         }
-<<<<<<< HEAD
 
         // Obterner los datos de la provincia por Nombre de la provincia
-        public async Task<Provincia> getProvincia_name(string provincia)
-=======
         public async Task<Provincia> getProvincia(string provincia)
->>>>>>> e6856841a340fdc2670ceb5347032cddf3b3fd38
         {
             sentencia_sql = "SELECT * FROM provincia WHERE provincia = '" + provincia + "';";
             return await this.connect_db.QueryFirstOrDefaultAsync<Provincia>(sentencia_sql);
