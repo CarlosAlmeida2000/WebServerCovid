@@ -16,20 +16,23 @@ namespace WebServerCovid.Controllers
         {
             _contagios = contagios;
         }
-        [HttpGet("")]
+
+        [HttpGet]
         public async Task<IActionResult> getAllProvincia()
         {
             return Ok(await this._contagios.getAllProvincia());
         }
-        [HttpGet("{id-provincia}")]
+
+        [HttpGet("id-provincia")]
         public async Task<IActionResult> getProvincia(int id)
         {
             return Ok(await this._contagios.getProvincia(id));
         }
-        [HttpGet("{name-provincia}")]
-        public async Task<IActionResult> getProvincia(string provincia)
+
+        [HttpGet("name-provincia")]
+        public async Task<IActionResult> getProvincia_name(string provincia)
         {
-            return Ok(await this._contagios.getProvincia(provincia));
+            return Ok(await this._contagios.getProvincia_name(provincia));
         }
     }
 }

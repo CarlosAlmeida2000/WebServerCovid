@@ -28,18 +28,18 @@ namespace Api_covid.data.Repository
         }
         public async Task<IEnumerable<Provincia>> getAllProvincia()
         {
-            sentencia_sql = "SELECT idprovincia, provincia, capital, superficie, hombres, mujeres, problacion_total, problacion_total, contagiados, recuperados, fallecidos FROM public.provincia;";
+            sentencia_sql = "SELECT * FROM provincia;";
             return await this.connect_db.QueryAsync<Provincia>(sentencia_sql, new { });
         }
         public async Task<Provincia> getProvincia(int id)
         {
-            sentencia_sql = "SELECT idprovincia, provincia, capital, superficie, hombres, mujeres, problacion_total, problacion_total, contagiados, recuperados, fallecidos FROM public.provincia WHERE idprovincia = @Id;";
-            return await this.connect_db.QueryFirstOrDefaultAsync<Provincia>(sentencia_sql, new { Id = id });
+            sentencia_sql = "SELECT * FROM provincia WHERE idprovincia = '" + id + "';";
+            return await this.connect_db.QueryFirstOrDefaultAsync<Provincia>(sentencia_sql);
         }
-        public async Task<Provincia> getProvincia(string provincia)
+        public async Task<Provincia> getProvincia_name(string provincia)
         {
-            sentencia_sql = "SELECT idprovincia, provincia, capital, superficie, hombres, mujeres, problacion_total, problacion_total, contagiados, recuperados, fallecidos FROM public.provincia WHERE provincia = '@provincia';";
-            return await this.connect_db.QueryFirstOrDefaultAsync<Provincia>(sentencia_sql, new { provincia });
+            sentencia_sql = "SELECT * FROM provincia WHERE provincia = '"+ provincia +"';";
+            return await this.connect_db.QueryFirstOrDefaultAsync<Provincia>(sentencia_sql);
         }
     }
 }
