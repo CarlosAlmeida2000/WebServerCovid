@@ -1,0 +1,13 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\consumoECcovid.js" />
+    <None Include="wwwroot\ec.svg" />
+    <None Include="wwwroot\estilo.css" />
+    <None Include="wwwroot\index.html" />
+  </ItemGroup>
+</Project>

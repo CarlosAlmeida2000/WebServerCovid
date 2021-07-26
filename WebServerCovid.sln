@@ -3,11 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30128.74
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebServerCovid", "WebServerCovid\WebServerCovid.csproj", "{8CFC19C5-0B1C-4087-A6B2-B541A8FB490D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebServerCovid", "WebServerCovid\WebServerCovid.csproj", "{8CFC19C5-0B1C-4087-A6B2-B541A8FB490D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Api_covid.data", "Api_covid.data\Api_covid.data.csproj", "{56F0F0C9-5FD1-49BD-A28D-1031FA7FB40E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Api_covid.data", "Api_covid.data\Api_covid.data.csproj", "{56F0F0C9-5FD1-49BD-A28D-1031FA7FB40E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Api_covid.models", "Api_covid.models\Api_covid.models.csproj", "{828D2EC2-3471-4164-A3EB-F8585DFF144F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Api_covid.models", "Api_covid.models\Api_covid.models.csproj", "{828D2EC2-3471-4164-A3EB-F8585DFF144F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsumoWScovid", "ConsumoWScovid\ConsumoWScovid.csproj", "{41E50E62-5252-4A44-A4B0-686ABA049B7B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +29,10 @@ Global
 		{828D2EC2-3471-4164-A3EB-F8585DFF144F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{828D2EC2-3471-4164-A3EB-F8585DFF144F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{828D2EC2-3471-4164-A3EB-F8585DFF144F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{41E50E62-5252-4A44-A4B0-686ABA049B7B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{41E50E62-5252-4A44-A4B0-686ABA049B7B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{41E50E62-5252-4A44-A4B0-686ABA049B7B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{41E50E62-5252-4A44-A4B0-686ABA049B7B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
