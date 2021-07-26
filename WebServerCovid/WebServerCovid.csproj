@@ -9,9 +9,5 @@
     <ProjectReference Include="..\Api_covid.models\Api_covid.models.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Controllers\" />
-  </ItemGroup>
-
 
 </Project>
