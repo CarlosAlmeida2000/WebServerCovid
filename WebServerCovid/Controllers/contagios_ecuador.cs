@@ -33,9 +33,9 @@ namespace WebServerCovid.Controllers
 
         /** /api/contagios_ecuador/name-provincia?provincia={nombre provincia} **/
         [HttpGet("name-provincia")]
-        public async Task<IActionResult> getProvincia_name(string provincia)
+        public async Task<IActionResult> getProvincia(string provincia)
         {
-            return Ok(await this._contagios.getProvincia_name(provincia));
+            return Ok(await this._contagios.getProvincia(provincia));
         }
     }
 }
