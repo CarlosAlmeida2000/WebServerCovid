@@ -5,13 +5,14 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Include="wwwroot\consumoECcovid.js" />
-    <None Include="wwwroot\ec.svg" />
-    <None Include="wwwroot\estilo.css" />
-    <None Include="wwwroot\index.html" />
+    <Content Remove="wwwroot\ec_2.svg" />
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Microsoft.AspNetCore.Cors" Version="2.2.0" />
+    <None Include="wwwroot\consumoECcovid.js" />
+    <None Include="wwwroot\ec.svg" />
+    <None Include="wwwroot\ec_2.svg" />
+    <None Include="wwwroot\estilo.css" />
+    <None Include="wwwroot\index.html" />
   </ItemGroup>
 </Project>
