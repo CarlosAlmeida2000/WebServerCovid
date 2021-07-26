@@ -1,0 +1,24 @@
+CREATE TABLE public.provincia
+(
+    idprovincia character varying COLLATE pg_catalog."default" NOT NULL,
+    provincia character varying COLLATE pg_catalog."default" NOT NULL,
+    superficie character varying COLLATE pg_catalog."default",
+    hombres character varying COLLATE pg_catalog."default",
+    mujeres character varying COLLATE pg_catalog."default",
+    capital character varying COLLATE pg_catalog."default",
+    problacion_total character varying COLLATE pg_catalog."default" NOT NULL,
+    contagiados double precision,
+    recuperados double precision,
+    fallecidos double precision,
+    CONSTRAINT provincia_pkey PRIMARY KEY (idprovincia)
+)
+
+TABLESPACE pg_default;
+
+ALTER TABLE public.provincia
+    OWNER to postgres;
+
+
+copy public.provincia (idprovincia, provincia, superficie, hombres, mujeres, capital, problacion_total, contagiados, recuperados, fallecidos) 
+FROM 'C:/ruta/provincias.csv' DELIMITER ';' csv ENCODING 'latin1';
+
