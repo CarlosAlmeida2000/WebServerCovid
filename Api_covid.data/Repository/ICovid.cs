@@ -8,5 +8,8 @@ namespace Api_covid.data.Repository
 {
     public interface ICovid
     {
+        Task<IEnumerable<Provincia>> getAllProvincia();
+        Task<Provincia> getProvincia(int id);
+        Task<Provincia> getProvincia(string provincia);
     }
 }

@@ -9,6 +9,30 @@ namespace WebServerCovid.Controllers
 {
     public class contagios_ecuador : Controller
     {
-        
+        [Route("api/[controller]")]
+        [ApiController]
+        public class Contagios_ecuador : Controller
+        {
+            private readonly ICovid _contagios;
+            public Contagios_ecuador(ICovid contagios)
+            {
+                _contagios = contagios;
+            }
+            [HttpGet]
+            public async Task<IActionResult> getAllProvincia()
+            {
+                return Ok(await this._contagios.getAllProvincia());
+            }
+            [HttpGet("{id-provincia}")]
+            public async Task<IActionResult> getProvincia(int id)
+            {
+                return Ok(await this._contagios.getProvincia(id));
+            }
+            [HttpGet("{name-provincia}")]
+            public async Task<IActionResult> getProvincia(string provincia)
+            {
+                return Ok(await this._contagios.getProvincia(provincia));
+            }
+        }
     }
 }
