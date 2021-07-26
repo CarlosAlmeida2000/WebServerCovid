@@ -6,7 +6,6 @@ using System.Collections.Generic;
 using System.Text;
 using System.Threading.Tasks;
 using Api_covid.data;
-using System.Data.SqlClient;
 using System.Data;
 using Dapper;
 

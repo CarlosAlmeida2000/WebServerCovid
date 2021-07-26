@@ -1,0 +1,49 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Covid 19 en Ecuador</title>
+    <link rel="stylesheet" href="./estilo.css">
+</head>
+<body>
+    <header>
+        <p>Conjunto de datos de Ecuador</p>
+    </header>
+    <main>
+        <p>COVID-19 POR PROVINCIAS</p>
+        <div class="mapa-ecuador">
+            <p><strong>MAPEO DEL CONJUNTO DE DATOS</strong></p>
+            <object id="svg-ecuador" data="./ec.svg" type="image/svg+xml"></object>
+        </div>
+        <div class="situacion-ecuador">
+            <p><strong>¿CUÁL ES LA SITUACIÓN DEL ECUADOR?</strong></p>
+            <div class="div-grid">
+                <div class="contagiados">
+                    <p>Contagiados</p>
+                    <canvas id="canvas-contagiados"></canvas>
+                </div>
+                <div class="fallecidos">
+                    <p>Fallecidos</p>
+                    <canvas id="canvas-fallecidos"></canvas>
+                </div>
+                <div class="recuperados">
+                    <p>Recuperados</p>
+                    <canvas id="canvas-recuperados"></canvas>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="autores">Autores</div>
+        <ul>
+            <li>Almeida Dueñas</li>
+            <li>Buenaño Darlyn</li>
+            <li>Pérez Henry</li>
+            <li>Plazarte John</li>
+        </ul>
+    </footer>
+</body>
+<script src="./consumoECcovid.js"></script>
+</html>
