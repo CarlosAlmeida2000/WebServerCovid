@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Api_covid.data\Api_covid.data.csproj" />
+    <ProjectReference Include="..\Api_covid.models\Api_covid.models.csproj" />
+  </ItemGroup>
+
+
+</Project>
