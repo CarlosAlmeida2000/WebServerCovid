@@ -17,6 +17,9 @@ namespace WebServerCovid
 {
     public class Startup
     {
+        readonly string allowSpecificOrigins = "_allowSpecificOrigins";
+
+
         public Startup(IConfiguration configuration)
         {
             Configuration = configuration;
@@ -27,6 +30,16 @@ namespace WebServerCovid
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddCors(options =>
+            {
+                options.AddPolicy(allowSpecificOrigins,
+                builder =>
+                {
+                    builder.WithOrigins("https://localhost:5002")
+                            .AllowAnyHeader()
+                            .AllowAnyMethod();
+                });
+            });
             var connect_postgre = new Config_postgres(Configuration.GetConnectionString("Config_postgres"));
             services.AddSingleton(connect_postgre);
             services.AddScoped<ICovid, Provin_reposito>();
@@ -40,11 +53,11 @@ namespace WebServerCovid
             {
                 app.UseDeveloperExceptionPage();
             }
-
             app.UseHttpsRedirection();
 
             app.UseRouting();
 
+            app.UseCors(allowSpecificOrigins);
             app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>
