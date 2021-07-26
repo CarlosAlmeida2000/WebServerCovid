@@ -10,6 +10,6 @@ namespace Api_covid.data.Repository
     {
         Task<IEnumerable<Provincia>> getAllProvincia();
         Task<Provincia> getProvincia(int id);
-        Task<Provincia> getProvincia_name(string provincia);
+        Task<Provincia> getProvincia(string provincia);
     }
 }
