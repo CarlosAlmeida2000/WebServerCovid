@@ -27,6 +27,9 @@ namespace WebServerCovid
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            var connect_postgre = new Config_postgres(Configuration.GetConnectionString("Config_postgres"));
+            services.AddSingleton(connect_postgre);
+            services.AddScoped<ICovid, Provin_reposito>();
             services.AddControllers();
         }
 
