@@ -9,17 +9,24 @@
 </head>
 <body>
     <header>
-        <p>Conjunto de datos de Ecuador</p>
+        <h2>Conjunto de datos de Ecuador</h2>
     </header>
     <main>
         <p>COVID-19 POR PROVINCIAS</p>
         <div class="mapa-ecuador">
             <p><strong>MAPEO DEL CONJUNTO DE DATOS</strong></p>
-            <object id="svg-ecuador" data="./ec.svg" type="image/svg+xml"></object>
+            <div class="div-grid-2_col">
+                <object id="svg-ecuador" data="./ec_2.svg" type="image/svg+xml"></object>
+                <ul id="lista-provincias">
+                    <li class="item">Azuay</li>
+                    <li class="item">Bolivar</li>
+                    <li class="item">Santo Domingo de los Tsáchilas</li>
+                </ul>
+            </div>
         </div>
         <div class="situacion-ecuador">
             <p><strong>¿CUÁL ES LA SITUACIÓN DEL ECUADOR?</strong></p>
-            <div class="div-grid">
+            <div class="div-grid-3_col">
                 <div class="contagiados">
                     <p>Contagiados</p>
                     <canvas id="canvas-contagiados"></canvas>
