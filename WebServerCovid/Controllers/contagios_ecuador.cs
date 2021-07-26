@@ -17,18 +17,21 @@ namespace WebServerCovid.Controllers
             _contagios = contagios;
         }
 
+        /** /api/contagios_ecuador **/
         [HttpGet]
         public async Task<IActionResult> getAllProvincia()
         {
             return Ok(await this._contagios.getAllProvincia());
         }
 
+        /** /api/contagios_ecuador/id-provincia?id={id provincia} **/
         [HttpGet("id-provincia")]
         public async Task<IActionResult> getProvincia(int id)
         {
             return Ok(await this._contagios.getProvincia(id));
         }
 
+        /** /api/contagios_ecuador/name-provincia?provincia={nombre provincia} **/
         [HttpGet("name-provincia")]
         public async Task<IActionResult> getProvincia_name(string provincia)
         {
