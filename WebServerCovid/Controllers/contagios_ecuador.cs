@@ -16,7 +16,7 @@ namespace WebServerCovid.Controllers
         {
             _contagios = contagios;
         }
-        [HttpGet]
+        [HttpGet("")]
         public async Task<IActionResult> getAllProvincia()
         {
             return Ok(await this._contagios.getAllProvincia());
