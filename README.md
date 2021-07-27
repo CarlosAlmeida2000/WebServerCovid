@@ -24,7 +24,7 @@ Buscar la carpeta de **WebServicesCovid**, dentro de la carpeta deberas abrir el
 
 ### **Paso 3**
 
-Configurar PHP para conectar la base de datos a la aplicación, **Nota:** la aplicación se realizó utilizando el motor de base de datos [**PostgreSQL**](https://www.postgresql.org/).
+Configurar .NET Core para conectar la base de datos a la aplicación, **Nota:** la aplicación se realizó utilizando el motor de base de datos [**PostgreSQL**](https://www.postgresql.org/).
 
 1. Ubicarse en la carpeta que tiene las configuaciones de la aplicación **..\WebServicesCovid\WebServerCovid**.
 2. Buscar el archivo **appsettings.json**
