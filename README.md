@@ -49,7 +49,7 @@ Crear la base de datos en **PostgreSQL** con las siguientes tablas:
 
 ### **Paso 5**
 
-Ejecutar la WebService y la Web de comsumo de .NET Core C#.
+Ejecutar la WebService y la Web de consumo de .NET Core C#.
 
 1. Para ejecutar la aplicación se deben abrir dos veces el proyecto de **WebServerCovid** en **Visual Studio**, donde una ventana de la IDE servirá para ejecutar el WebService y la otra ventana servirá para ejecutar la aplicación de consumo.
 2. Ejecuar el WebService. **Nota:** Para poder ejecuar el WebService corretamete debe tener seleccionado en el IDE **WebServerCovid** y al seleccionar correr o play de **Visual Studio** se debe cambiar de **IIS Express** a **WebServerCovid**.
