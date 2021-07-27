@@ -33,7 +33,7 @@ footer {
     footer > ul {
         display: grid;
         list-style-type: none;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: repeat(4, 1fr);
         margin: 0px;
         padding: 0px;
     }
@@ -86,7 +86,7 @@ path:hover{
 
 .div-grid-3_col {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
 }
 
 .item {
