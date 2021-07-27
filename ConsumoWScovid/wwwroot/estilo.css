@@ -63,6 +63,16 @@ footer {
     margin-bottom: 20px;
 }
 
+path{
+    fill: #ad1818;
+}
+path:hover{
+    fill: #616161;
+}
+
+.clase{
+    background-color: #a81010;
+}
 
 /* ************ CLASES GLOBALES ************ */
 .w-100 {
